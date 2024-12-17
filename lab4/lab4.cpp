@@ -4,12 +4,12 @@ using namespace std;
 int main() {
 	int a[5][5];
 	int max, min;
-
+	srand(time(NULL));
 	max = a[0][0];
 	min = a[0][0];
 	for (int i = 0; i < 5; ++i) {
 		for (int j = 0; j < 5; ++j) {
-			a[i][j] = rand() % 26;
+			a[i][j] = rand() % 21 - 10;
 		}
 	}
 
